@@ -4,7 +4,7 @@
     <div class="navigation__search">
       <input class="navigation__search-field" type="search" placeholder="搜索">
     </div>
-    <div class="navigation__category">部署</div>
+    <div class="navigation__category">介绍</div>
     <ul class="navigation__link-list">
       {% for link in site.nav.deploy %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">

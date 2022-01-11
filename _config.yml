@@ -18,6 +18,21 @@ nav:
     - text: S1-代码结构
       url: /step1
       available: true
+    - text: S2-通信协议
+      url: /step2
+      available: true
+    - text: S3-连接池
+      url: /step3
+      available: true
+    - text: S4-shell
+      url: /step4
+      available: true
+    - text: S5-vnc原理
+      url: /step5
+      available: true
+    - text: S6-vnc实现
+      url: /step6
+      available: true
 
 # Defaults
 defaults:
