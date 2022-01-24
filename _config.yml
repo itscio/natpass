@@ -21,17 +21,14 @@ nav:
     - text: S2-通信协议
       url: /step2
       available: true
-    - text: S3-连接池
+    - text: S3-shell
       url: /step3
       available: true
-    - text: S4-shell
+    - text: S4-vnc原理
       url: /step4
       available: true
-    - text: S5-vnc原理
+    - text: S5-vnc实现
       url: /step5
-      available: true
-    - text: S6-vnc实现
-      url: /step6
       available: true
 
 # Defaults

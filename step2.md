@@ -15,9 +15,7 @@
             }
             type      _type = 1; // 消息类型，详见type结构
             string     from = 2; // 数据来源client id
-            uint32 from_idx = 3; // 来源连接id
             string       to = 4; // 数据目标client id
-            uint32   to_idx = 5; // 目标连接id
             string  link_id = 6; // 虚拟链接id
             oneof payload { // 消息内容定义
                 ...
@@ -33,7 +31,9 @@ TODO补图
 
 ## 虚拟链接
 
-在终端页面创建任何一个链接时，都会发起一个`connect_req`请求，该请求使用[connect_request](https://github.com/jkstack/natpass/blob/master/code/network/connect.proto)结构进行包装
+在终端页面创建任何一个链接时，都会创建一个虚拟链接，该虚拟链接有两个端点，分别为`控制端`和`受控端`体现在msg接口中的`from`和`to`字段
+
+在每一个虚拟链接创建时都会发起一个`connect_req`请求，该请求使用[connect_request](https://github.com/jkstack/natpass/blob/master/code/network/connect.proto)结构进行包装
 
         message connect_request {
             enum type {
